@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luntik Visuals | Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Горизонтальная шапка в стиле Rain Visuals без лишних значков -->
+    <nav class="navbar">
+        <div class="nav-logo">Luntik Visuals</div>
+        
+        <div class="nav-links">
+            <a href="#" class="nav-item active">Главная</a>
+            <a href="#" class="nav-item">Цены</a>
+            <a href="#" class="nav-item">Модули</a>
+            <a href="#" class="nav-item">Функции</a>
+            <a href="#" class="nav-item">Поддержка</a>
+        </div>
+
+        <div class="nav-auth">
+            <a href="#" class="profile-btn">Профиль</a>
+            <button class="logout-btn">➔</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент сайта -->
+    <div class="container">
+        <main>
+            <!-- Блок скачивания лаунчера -->
+            <section class="download-card">
+                <h1>Ультимативный Minecraft Лаунчер</h1>
+                <p>Испытай новые ощущения от игры с кастомными визуалами, умным ИИ-помощником и уникальными темами оформления.</p>
+                <a href="#" class="play-button" id="downloadBtn">🚀 Скачать Лаунчер (v1.0.0)</a>
+            </section>
+
+            <!-- БЛОК ЕЖЕДНЕВНОЙ РУЛЕТКИ КАРТОЧЕК 24Ч -->
+            <section class="download-card roulette-section">
+                <h2>🎁 Ежедневная рулетка Luntik</h2>
+                <p id="rouletteTimerText">Испытай свою удачу! Выбери одну из трех закрытых карточек раз в 24 часа и выиграй уникальный титул или подписку.</p>
+                
+                <!-- Контейнер с тремя карточками -->
+                <div class="cards-container">
+                    <div class="case-card" id="card1" onclick="openLotteryCard(1)">?</div>
+                    <div class="case-card" id="card2" onclick="openLotteryCard(2)">?</div>
+                    <div class="case-card" id="card3" onclick="openLotteryCard(3)">?</div>
+                </div>
+                
+                <!-- Строка с результатом -->
+                <div id="rouletteResult" class="roulette-result-box"></div>
+            </section>
+
+            <!-- Сетка: Новости и Чат-поддержка -->
+            <div class="content-grid">
+                
+                <!-- Новости -->
+                <div class="card-panel">
+                    <h2>📦 Новости релиза</h2>
+                    <div class="release-box">
+                        <h3>LuntikVisuals 1.0 стабилен!</h3>
+                        <p>Мы успешно запустили веб-версию нашего проекта. Скачивай софт, выбирай Божественную тему или тему Месть и доминируй!</p>
+                    </div>
+                </div>
+
+                <!-- Чат-поддержка -->
+                <div class="card-panel">
+                    <h2>🤖 Веб-поддержка Luntik</h2>
+                    <div class="chat-area" id="chatArea">
+                        <div class="msg bot">🤖 Бот: Привет! Нужна помощь с установкой лаунчера? Задай мне вопрос!</div>
+                    </div>
+                    <div class="chat-input-row">
+                        <input type="text" id="userInput" placeholder="Напишите вашу проблему...">
+                        <button class="glass-button" id="sendBtn">Отправить</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
